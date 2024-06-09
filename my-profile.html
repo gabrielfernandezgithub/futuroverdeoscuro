@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>FVO - Mi perfil</title>
+  <meta charset="UTF-8">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<style>
+  body {
+      background-image: url(img/images.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* La imagen de fondo permanecerá estática */
+  }
+</style>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <a href="quienesomos.html">
+            <img src="img/logo.png" alt="logo de la organización" height="100px" width="180px">
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" href="actividades.html"><br>Eventos y actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><br>Último Articulo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="preguntas.html"> <br>Preguntas Frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="foro.html"> <br>Foro</a>
+          </li>
+          <li class="nav-item dropdown"> <!-- dropmenu -->
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <br> <span id="usernameDropdown">¡Ingresa para comentar en el foro!</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="my-profile.html">Perfil</a>
+              <a class="dropdown-item" href="#" id="logout">Cerrar sesión</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="fondo">
+    <br><br><br><br><br>
+    <div class="container">
+      <div>
+        <h2>Perfil</h2>
+        <img id="imagenPerfil" src="#" alt="Imagen de perfil" class="fotoPerfil">
+        <hr class="mt-4">
+      </div>
+      <div>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="primerNombre">Primer Nombre *</label>
+                <input type="text" id="primerNombre" name="primerNombre" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="segundoNombre">Segundo Nombre</label>
+                <input type="text" id="segundoNombre" name="segundoNombre" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="primerApellido">Primer Apellido *</label>
+                <input type="text" id="primerApellido" name="primerApellido" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="segundoApellido">Segundo Apellido</label>
+                <input type="text" id="segundoApellido" name="segundoApellido" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" id="emailUsuario" name="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono de contacto *</label>
+                <input type="text" id="telefono" name="telefono" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="imagen">Cambiar foto de perfil</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <button type="button" class="btn btn-primary" id="guardarCambios">Guardar cambios</button>
+        </form>
+
+
+      </div>
+      <br><br><br><br><br>
+    </div>
+  </main>
+
+
+  <footer  class="footer">
+    <p><img src="img/logo.png" alt="logo de la organización" height="100px" width="180px">
+      Página diseñada por <a href="yo.html">Gabriel Fernández</a> </p>
+    </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/my-profile.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
